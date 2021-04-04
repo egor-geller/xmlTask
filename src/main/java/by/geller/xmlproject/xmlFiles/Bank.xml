@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<banks>
+    <bank id="b1">
+        <bank-name>Belarusbank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>on demand</type-of-deposit>
+        <depositors-name>Jane</depositors-name>
+        <account-id>z3s-x8n-6q6-exw-x6p</account-id>
+        <deposit-amount>10000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b2">
+        <bank-name>Belinvestbank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>urgent</type-of-deposit>
+        <depositors-name>James</depositors-name>
+        <account-id>827-upf-ywr-vud-9ac</account-id>
+        <deposit-amount>11000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b3">
+        <bank-name>Belagroprombank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>settlement</type-of-deposit>
+        <depositors-name>Mary</depositors-name>
+        <account-id>xiw-abc-h7a-o32-2qw</account-id>
+        <deposit-amount>12000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b4">
+        <bank-name>Belgazprombank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>savings</type-of-deposit>
+        <depositors-name>John</depositors-name>
+        <account-id>crj-5ha-c8g-7ze-yhf</account-id>
+        <deposit-amount>13000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b5">
+        <bank-name>Paritet Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>metal</type-of-deposit>
+        <depositors-name>Patricia</depositors-name>
+        <account-id>52t-obc-eyt-mzy-ffm</account-id>
+        <deposit-amount>14000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b6">
+        <bank-name>Priorbank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>on demand</type-of-deposit>
+        <depositors-name>Robert</depositors-name>
+        <account-id>fjj-njz-6x6-esf-v7t</account-id>
+        <deposit-amount>15000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b7">
+        <bank-name>BPS-Sberbank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>urgent</type-of-deposit>
+        <depositors-name>Jennifer</depositors-name>
+        <account-id>g8i-idw-qqb-xik-a7c</account-id>
+        <deposit-amount>16000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b8">
+        <bank-name>CJSC VTB Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>settlement</type-of-deposit>
+        <depositors-name>Michael</depositors-name>
+        <account-id>m4g-ymj-qwu-tqx-ztx</account-id>
+        <deposit-amount>17000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b9">
+        <bank-name>Technobank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>savings</type-of-deposit>
+        <depositors-name>Linda</depositors-name>
+        <account-id>zkk-cgg-bfj-iuc-pyh</account-id>
+        <deposit-amount>18000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b10">
+        <bank-name>Absolutbank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>metal</type-of-deposit>
+        <depositors-name>William</depositors-name>
+        <account-id>vwc-m93-xix-evr-9af</account-id>
+        <deposit-amount>19000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b11">
+        <bank-name>Alfa Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>on demand</type-of-deposit>
+        <depositors-name>Elizabeth</depositors-name>
+        <account-id>6uh-rs6-azk-n8y-9q7</account-id>
+        <deposit-amount>20000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b12">
+        <bank-name>Dabrabyt Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>urgent</type-of-deposit>
+        <depositors-name>David</depositors-name>
+        <account-id>4ku-6mb-mjg-5bc-2o8</account-id>
+        <deposit-amount>21000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b13">
+        <bank-name>Idea Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>settlement</type-of-deposit>
+        <depositors-name>Barbara</depositors-name>
+        <account-id>879-itd-9yn-nrz-nq5</account-id>
+        <deposit-amount>22000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b14">
+        <bank-name>Status Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>savings</type-of-deposit>
+        <depositors-name>Richard</depositors-name>
+        <account-id>cdf-kdg-ek6-pbu-45t</account-id>
+        <deposit-amount>23000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b15">
+        <bank-name>Zepter Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>metal</type-of-deposit>
+        <depositors-name>Susan</depositors-name>
+        <account-id>q6n-j3e-crt-iiw-c27</account-id>
+        <deposit-amount>24000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+    <bank id="b16">
+        <bank-name>BSB Bank</bank-name>
+        <registration-in-country>Belarus</registration-in-country>
+        <type-of-deposit>on demand</type-of-deposit>
+        <depositors-name>Joseph</depositors-name>
+        <account-id>wv7-ftm-zxj-e7m-zp7</account-id>
+        <deposit-amount>25000</deposit-amount>
+        <annual-percentage>5%</annual-percentage>
+        <term-of-deposit>Date</term-of-deposit>
+    </bank>
+</banks>
