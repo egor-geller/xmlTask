@@ -18,8 +18,6 @@ import java.sql.Driver;
 public class StaxParser {
     public void staxParser(String path) throws EmptyException, XMLStreamException, FileNotFoundException, TransformerException {
         System.out.println(transformXML(4, (new StaxAdvancedXMLHandler()).processXMLFile(new File(path))));
-        //Logger logger = LogManager.getLogger();
-        //logger.info("works");
     }
 
     public String transformXML(int indentation, StringBuilder rawXML) throws TransformerException {
