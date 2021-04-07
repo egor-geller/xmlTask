@@ -1,12 +1,10 @@
-package by.geller.xmlproject;
+package by.geller.xmlproject.entity;
 
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.Objects;
 
 public class Banks {
     private String bankName, registrationInCountry, typeOfDeposit, depositorsName, accountId, annualPercentage;
-    private Integer depositAmount;
+    private int depositAmount;
     private String termOfDeposit;
 
     public Banks() {
@@ -14,7 +12,7 @@ public class Banks {
     }
 
     public Banks(String bankName, String registrationInCountry, String typeOfDeposit, String depositorsName
-            , String accountId, String annualPercentage, Integer depositAmount, String termOfDeposit) {
+            , String accountId, String annualPercentage, int depositAmount, String termOfDeposit) {
         this.bankName = bankName;
         this.registrationInCountry = registrationInCountry;
         this.typeOfDeposit = typeOfDeposit;
@@ -29,7 +27,7 @@ public class Banks {
         return termOfDeposit;
     }
 
-    public Integer getDepositAmount() {
+    public int getDepositAmount() {
         return depositAmount;
     }
 
@@ -69,7 +67,7 @@ public class Banks {
         this.bankName = bankName;
     }
 
-    public void setDepositAmount(Integer depositAmount) {
+    public void setDepositAmount(int depositAmount) {
         this.depositAmount = depositAmount;
     }
 
@@ -109,7 +107,7 @@ public class Banks {
         return bankName.equals(banks.bankName) && Objects.equals(registrationInCountry, banks.registrationInCountry)
                 && typeOfDeposit.equals(banks.typeOfDeposit) && depositorsName.equals(banks.depositorsName)
                 && accountId.equals(banks.accountId) && Objects.equals(annualPercentage, banks.annualPercentage)
-                && depositAmount.equals(banks.depositAmount) && termOfDeposit.equals(banks.termOfDeposit);
+                && depositAmount == (banks.depositAmount) && termOfDeposit.equals(banks.termOfDeposit);
     }
 
     @Override

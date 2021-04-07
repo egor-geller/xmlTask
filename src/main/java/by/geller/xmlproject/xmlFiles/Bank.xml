@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <banks>
     <bank id="b1">
         <bank-name>Belarusbank</bank-name>
@@ -8,7 +8,7 @@
         <account-id>z3s-x8n-6q6-exw-x6p</account-id>
         <deposit-amount>10000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>01-01-2021 10:00:00</term-of-deposit>
     </bank>
     <bank id="b2">
         <bank-name>Belinvestbank</bank-name>
@@ -18,7 +18,7 @@
         <account-id>827-upf-ywr-vud-9ac</account-id>
         <deposit-amount>11000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>02-01-2021 11:00:00</term-of-deposit>
     </bank>
     <bank id="b3">
         <bank-name>Belagroprombank</bank-name>
@@ -28,7 +28,7 @@
         <account-id>xiw-abc-h7a-o32-2qw</account-id>
         <deposit-amount>12000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>03-01-2021 12:00:00</term-of-deposit>
     </bank>
     <bank id="b4">
         <bank-name>Belgazprombank</bank-name>
@@ -38,7 +38,7 @@
         <account-id>crj-5ha-c8g-7ze-yhf</account-id>
         <deposit-amount>13000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>04-01-2021 13:00:00</term-of-deposit>
     </bank>
     <bank id="b5">
         <bank-name>Paritet Bank</bank-name>
@@ -48,7 +48,7 @@
         <account-id>52t-obc-eyt-mzy-ffm</account-id>
         <deposit-amount>14000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>05-01-2021 14:00:00</term-of-deposit>
     </bank>
     <bank id="b6">
         <bank-name>Priorbank</bank-name>
@@ -58,7 +58,7 @@
         <account-id>fjj-njz-6x6-esf-v7t</account-id>
         <deposit-amount>15000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>06-01-2021 15:00:00</term-of-deposit>
     </bank>
     <bank id="b7">
         <bank-name>BPS-Sberbank</bank-name>
@@ -68,7 +68,7 @@
         <account-id>g8i-idw-qqb-xik-a7c</account-id>
         <deposit-amount>16000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>07-01-2021 16:00:00</term-of-deposit>
     </bank>
     <bank id="b8">
         <bank-name>CJSC VTB Bank</bank-name>
@@ -78,7 +78,7 @@
         <account-id>m4g-ymj-qwu-tqx-ztx</account-id>
         <deposit-amount>17000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>08-01-2021 17:00:00</term-of-deposit>
     </bank>
     <bank id="b9">
         <bank-name>Technobank</bank-name>
@@ -88,7 +88,7 @@
         <account-id>zkk-cgg-bfj-iuc-pyh</account-id>
         <deposit-amount>18000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>09-01-2021 18:00:00</term-of-deposit>
     </bank>
     <bank id="b10">
         <bank-name>Absolutbank</bank-name>
@@ -98,7 +98,7 @@
         <account-id>vwc-m93-xix-evr-9af</account-id>
         <deposit-amount>19000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>10-01-2021 19:00:00</term-of-deposit>
     </bank>
     <bank id="b11">
         <bank-name>Alfa Bank</bank-name>
@@ -108,7 +108,7 @@
         <account-id>6uh-rs6-azk-n8y-9q7</account-id>
         <deposit-amount>20000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>11-01-2021 20:00:00</term-of-deposit>
     </bank>
     <bank id="b12">
         <bank-name>Dabrabyt Bank</bank-name>
@@ -118,7 +118,7 @@
         <account-id>4ku-6mb-mjg-5bc-2o8</account-id>
         <deposit-amount>21000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>12-01-2021 10:00:00</term-of-deposit>
     </bank>
     <bank id="b13">
         <bank-name>Idea Bank</bank-name>
@@ -128,7 +128,7 @@
         <account-id>879-itd-9yn-nrz-nq5</account-id>
         <deposit-amount>22000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>13-01-2021 11:00:00</term-of-deposit>
     </bank>
     <bank id="b14">
         <bank-name>Status Bank</bank-name>
@@ -138,7 +138,7 @@
         <account-id>cdf-kdg-ek6-pbu-45t</account-id>
         <deposit-amount>23000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>14-01-2021 12:00:00</term-of-deposit>
     </bank>
     <bank id="b15">
         <bank-name>Zepter Bank</bank-name>
@@ -148,7 +148,7 @@
         <account-id>q6n-j3e-crt-iiw-c27</account-id>
         <deposit-amount>24000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>15-01-2021 13:00:00</term-of-deposit>
     </bank>
     <bank id="b16">
         <bank-name>BSB Bank</bank-name>
@@ -158,6 +158,6 @@
         <account-id>wv7-ftm-zxj-e7m-zp7</account-id>
         <deposit-amount>25000</deposit-amount>
         <annual-percentage>5%</annual-percentage>
-        <term-of-deposit>Date</term-of-deposit>
+        <term-of-deposit>16-01-2021 14:00:00</term-of-deposit>
     </bank>
 </banks>

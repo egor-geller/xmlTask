@@ -1,68 +1,50 @@
 package by.geller.xmlproject.parsers.sax.handler;
 
-
-import by.geller.xmlproject.Banks;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
-
+import by.geller.xmlproject.entity.Banks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.xml.sax.Attributes;
+import org.xml.sax.helpers.DefaultHandler;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class AdvancedXMLHandler extends DefaultHandler {
-
-    private String bankName, registrationInCountry, typeOfDeposit, depositorsName, accountId, annualPercentage;
-    private Integer depositAmount;
-    private String termOfDeposit;
     private String currentElement;
 
-    Banks banks;
-    public static final ArrayList<Banks> arrayList = new ArrayList<>();
+    Banks banks = new Banks();
+    public static final Set<Banks> arrayList = new HashSet<>();
 
-    final String BANK_NAME_TAG = "bank-name";
-    final String ACCOUNT_ID_TAG = "account-id";
-    final String ANNUAL_PERCENTAGE_TAG = "annual-percentage";
-    final String DEPOSIT_AMOUNT_TAG = "deposit-amount";
-    final String DEPOSITORS_NAME_TAG = "depositors-name";
-    final String REGISTRATION_IN_COUNTRY_TAG = "registration-in-country";
-    final String TERM_OF_DEPOSIT_TAG = "term-of-deposit";
-    final String TYPE_OF_DEPOSIT_TAG = "type-of-deposit";
+    static final String BANK_NAME_TAG = "bank-name";
+    static final String ACCOUNT_ID_TAG = "account-id";
+    static final String ANNUAL_PERCENTAGE_TAG = "annual-percentage";
+    static final String DEPOSIT_AMOUNT_TAG = "deposit-amount";
+    static final String DEPOSITORS_NAME_TAG = "depositors-name";
+    static final String REGISTRATION_IN_COUNTRY_TAG = "registration-in-country";
+    static final String TERM_OF_DEPOSIT_TAG = "term-of-deposit";
+    static final String TYPE_OF_DEPOSIT_TAG = "type-of-deposit";
 
     Logger logger = LogManager.getLogger();
 
     @Override
-    public void startDocument() throws SAXException {
-        banks = new Banks();
+    public void startDocument() {
         logger.info("SAX parsing started");
     }
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+    public void startElement(String uri, String localName, String qName, Attributes attributes) {
         currentElement = qName;
-
-        for (int i = 0; i < attributes.getLength(); i++) {
-            //currentElement.append(" ").append(attributes.getQName(i)).append(" = ").append(attributes.getValue(i));
-            currentElement += " " + attributes.getQName(i) + " = " + attributes.getValue(i);
-        }
-        logger.info(currentElement);
-
+        logger.info(qName);
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-
+    public void characters(char[] ch, int start, int length) {
         String information = new String(ch, start, length);
 
         information = information.replace("\n", "").trim();
-        if (information.contains("<") || currentElement == null){
+        if (information.contains("<") || currentElement == null) {
             return;
         }
-
 
         if (!information.isEmpty()) {
             if (currentElement.equals(BANK_NAME_TAG)) {
@@ -85,48 +67,22 @@ public class AdvancedXMLHandler extends DefaultHandler {
             }
             if (currentElement.equals(TERM_OF_DEPOSIT_TAG)) {
                 banks.setTermOfDeposit(information);
+                arrayList.add(banks);
+                banks = new Banks();
             }
             if (currentElement.equals(TYPE_OF_DEPOSIT_TAG)) {
                 banks.setTypeOfDeposit(information);
             }
         }
-        //TODO: Insertion to array problem
-        if (currentElement.equals(TERM_OF_DEPOSIT_TAG)){
-            arrayList.add(banks);
-        }
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        if ((bankName != null && !bankName.isEmpty()) && (accountId != null && !accountId.isEmpty())
-                && (annualPercentage != null && !annualPercentage.isEmpty()) && (depositAmount != null && depositAmount < 0)
-                && (depositorsName != null && !depositorsName.isEmpty()) && (registrationInCountry != null && !registrationInCountry.isEmpty())
-                && (termOfDeposit != null && !termOfDeposit.isEmpty()) && (typeOfDeposit != null && !typeOfDeposit.isEmpty())) {
-
-            bankName = null;
-            accountId = null;
-            annualPercentage = null;
-            depositAmount = null;
-            depositorsName = null;
-            registrationInCountry = null;
-            termOfDeposit = null;
-            typeOfDeposit = null;
-        }
-
-
+    public void endElement(String uri, String localName, String qName) {
+        logger.info("Element has ended");
     }
 
     @Override
-    public void endDocument() throws SAXException {
-
+    public void endDocument() {
         logger.info("SAX parsing ended");
     }
-
-    private static String getElementTextContent(Element element, String elementName) {
-        NodeList nList = element.getElementsByTagName(elementName);
-        Node node = nList.item(0);
-        String text = node.getTextContent();
-        return text;
-    }
-
 }
