@@ -1,5 +1,6 @@
 package by.geller.xmlproject.parsers.dom;
 
+import by.geller.xmlproject.builder.AbstractBanksBuilder;
 import by.geller.xmlproject.entity.Banks;
 import by.geller.xmlproject.exception.EmptyException;
 import org.w3c.dom.*;
@@ -16,7 +17,7 @@ import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class DOMParser {
+public class DOMParser extends AbstractBanksBuilder {
     Logger logger = LogManager.getLogger();
     private final Set<Banks> arrayOfBanks = new HashSet<>();
     private final DocumentBuilder documentBuilder;
@@ -28,6 +29,11 @@ public class DOMParser {
         } catch (Exception e) {
             throw new EmptyException("Parser config exception: " + e.getCause());
         }
+    }
+
+    @Override
+    public void buildArrayBanks(String filename) throws EmptyException {
+
     }
 
     public List<Banks> getBanks() {
